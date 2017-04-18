@@ -5,7 +5,7 @@ var os = require('os');
 // Configure our HTTP server to respond with Hello World to all requests.
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World\nAddresses: " + myIp() + "/nHost: " + os.hostname());
+  response.end("Hello World\nAddresses: " + myIp() + "\nHost: " + os.hostname());
 });
 
 function myIp() {
